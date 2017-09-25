@@ -1,9 +1,12 @@
 //challenge 2
 
-var printSample = 0;
-function createFunctionPrinter('sample') {
-  var printHello = 0;
+function createFunctionPrinter() {
+  var printSample = "sample";
+  var printHello = "Hello";
   function createdFunc() {
-    input
+    printHello;
   }
+  return printHello;
 }
+
+createFunctionPrinter();
