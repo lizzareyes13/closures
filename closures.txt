@@ -1,9 +1,12 @@
 Challenge 1
 Create a function createFunction that creates and returns a function. When that created function is called, it should print "hello".
 
-var function1 = createFunction();
-// now we'll call the function we just created
-function hello() {
-  return 'hello'
+function createFunction () {
+	function aFunction() {
+		return 'hello';
+	}
+	return aFunction;
 }
-function1(); //should console.log('hello');
+
+var neato = createFunction();
+neato();
