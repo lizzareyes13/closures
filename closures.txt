@@ -1,6 +1,9 @@
+Challenge 1
+Create a function createFunction that creates and returns a function. When that created function is called, it should print "hello".
+
 var function1 = createFunction();
 // now we'll call the function we just created
-function createFunction() {
-  console.log('hello')
+function hello() {
+  return 'hello'
 }
-function1(); 
+function1(); //should console.log('hello');
