@@ -1,12 +1,32 @@
 Challenge 1
 Create a function createFunction that creates and returns a function. When that created function is called, it should print "hello".
 
-function createFunction () {
-	function aFunction() {
-		return 'hello';
-	}
-	return aFunction;
-}
+				function createFunction () {
+					function aFunction() {
+						return 'hello';
+					}
+					return aFunction;
+				}
 
-var neato = createFunction();
-neato();
+				var neato = createFunction();
+				neato();
+
+
+Challenge 2
+Create a function createFunctionPrinter that accepts one input and returns a function. When that created function is called, it should print out the input that was used when the function was created.
+var printSample = createFunctionPrinter('sample');
+var printHello = createFunctionPrinter('hello')
+// now we'll call the functions we just created
+printSample(); //should console.log('sample');
+printHello(); //should console.log('hello');
+
+				function createFunctionPrinter() {
+				  var printSample = "sample";
+				  var printHello = "Hello";
+				  function createdFunc() {
+				    printHello;
+				  }
+				  return printHello;
+				}
+
+				createFunctionPrinter();
