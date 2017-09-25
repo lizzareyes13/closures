@@ -1,0 +1,6 @@
+var function1 = createFunction();
+// now we'll call the function we just created
+function createFunction() {
+  console.log('hello')
+}
+function1(); 
